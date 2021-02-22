@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <a href="https://icons8.com/icon/5eT5OnLluNOx/instagram"></a>
+    <a href="https://icons8.com/icon/44019/linkedin"></a>
+    <a href="https://icons8.com/icon/103129/email"></a>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <div id="sidebar" class="grid-child first" >
+            <nav>
+                
+                <ul class="nav-item" >
+                    <a onclick="scroll1()" id="home" class="nav-link"><ul><span class="material-icons md-light"> home</span></ul> Home </a>
+                </ul>
+                <ul class="nav-item" >                   
+                    <a onclick="scroll2()" id="about" class="nav-link"><ul><span class="material-icons md-light">perm_identity</span></ul> About </a>
+                </ul>
+                <ul class="nav-item" >
+                    <a onclick="scroll3()" id="education" class="nav-link"><ul><span class="material-icons md-light">school</span></ul> Education </a>
+                </ul>
+                <ul class="nav-item" >
+                    <a onclick="scroll4()" id="cv" class="nav-link"><ul><span class="material-icons md-light">article</span></ul> CV </a>
+                </ul>
+                <ul class="nav-item" >
+                    <a onclick="scroll5()" id="hobbies" class="nav-link"><ul><span class="material-icons md-light">sports_esports</span></ul> Hobbies </a>
+                </ul>
+                <ul class="nav-item" >
+                    <a onclick="scroll6()" id="contact" class="nav-link"><ul><span class="material-icons md-light">chat</span></ul> Contact </a>
+                </ul>
+                <footer class="copyright" >©  Barış Emren. February 2021 </footer>      
+            </nav>
+        </div>
+        <div id="content" class="grid-child second" >
+            <div id="img" style="display: flex; justify-content:center" >
+                <img id="me" src="me.png" alt="That's Me!">
+            </div><br>
+            <h1 style="text-align:center; font-family: 'Rubik', sans-serif; font-size: 36px; color:papayawhip " >Barış Emren</h1>
+            <br>
+            <h2 style="text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif " >Electrical and Electronics Engineering Student</h2>
+            <br>
+            <h3 style="text-align:center; color:rgb(255, 255, 255); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ">Still Learning</h3>
+            <br><br><br><br><br>
+            <h1 id="scroll-text" style="text-align:center;font-size:larger;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif " >Click to Scroll Down</h1>
+            <div onclick="scroll2()" id="firstpagescroll" style="display:flex; justify-content:center">
+                <img src="https://img.icons8.com/ios-filled/50/000000/double-down.png" alt="">
+            </div>
+            <div id="aboutpage">
+                <h1>About Me</h1><br>
+                <p>
+                    Hi! I am Barış Emren, 21 years old yet.First of all, I need to say that I'm always eager and open to learn. 
+                    I am studying Electrical and Electronics Engineering in Denizli, Pamukkale University. I'm from Balıkesir and 
+                    my family still lives in there.<br><br> My coding passion started when i was in high school but in the early days (or months maybe ?) 
+                    of university i could't improve myself because of my lectures. My lectures are mostly about electrical or electronical stuff
+                    as you can imagine. But I always interested about coding or developing something and in my free times I tried
+                    to learn some coding languages.<br><br> Right now I am really interested in Python because I wanna do something about 
+                    "Data Analysis" but still open for options. For example I'm learning "Web Developing" right now and writing code 
+                    for this personal website. I wanna improve myself on mobile developing also. <br>That's all for now. Thanks for reading. :) <br> -
+                </p>
+            </div>
+            <div id="educationpage">
+                <h1>Education</h1><br>
+                <p>
+                    I studied high shcool in Balıkesir Celal Toraman Anatolian High School. In 2017 I graduate from there
+                    and my university adventure has begun at Denizli Pamukkale University. I'm still Electrical and 
+                    Electronics Engineering student in here.<br><br> I am very interested in English by the way and I took 
+                    a few courses of English. I was still continuing but I could't finish my course completely because of the 
+                    pandemic situation. Nevertheless I am at C1 (advanced) level.<br><br> In quarantine days I took some online 
+                    courses about Python from different schools and sources like University of Michigan, Coursera and LinkedIn Learning.
+                    You can see and download my certificates from links below.
+                </p><br>
+                <div id="certificates" >
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/1PO7JQgTEUtiYGEPudz72Wh__fp-30qzC/preview" width="280" height="150"></iframe> 
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/1wnptGyqv-Jf5zJR1thWp7P3pkM7ttAhB/preview" width="280" height="150"></iframe> 
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/1dM1vw6i02Vk-Pf4-Z_Gta-o5242xeGXS/preview" width="280" height="150"></iframe> 
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/1cXotx1hyTGOo0vUjDVzgG5VY_T-ftoMC/preview" width="280" height="150"></iframe> 
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/162v-YpSHnBvdt-eqV5XOCEuhJLNI9FJ0/preview" width="280" height="150"></iframe> 
+                    <iframe id="certificate-item" src="https://drive.google.com/file/d/1WSQCPzSBY63d0bKbVzggOcLIXwaDGfL6/preview" width="280" height="150"></iframe> 
+                </div><br>  
+            </div>
+            <div id="cvpage">
+                <h1>CV</h1>
+                <div id="skills" >
+                    <h2 class="skill-name"style="margin-left:2rem;" >MS Office</h2>
+                    <ul class="skill-bar" style="margin-left:2rem;" >
+                        <div class="skill-item" id="skillone" style="width: 95%;" >Great</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:4rem;" >AutoCAD</h2>
+                    <ul class="skill-bar" style="margin-left:4rem;" >
+                        <div class="skill-item" id="skilltwo"style="width: 80%;" >Skill 2</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:6rem;" >Pspice</h2>
+                    <ul class="skill-bar" style="margin-left:6rem;" >
+                        <div class="skill-item" id="skillthree"style="width: 75%;">Skill 3</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:8rem;" >Arduino</h2>
+                    <ul class="skill-bar" style="margin-left:8rem;" >
+                        <div class="skill-item" id="skillfour"style="width: 85%;">Skill 4</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:10rem;" >C Programming</h2>
+                    <ul class="skill-bar" style="margin-left:10rem;" >
+                        <div class="skill-item" id="skillfive"style="width: 50%;">Skill 5</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:8rem;" >Delta WPLSoft</h2>
+                    <ul class="skill-bar" style="margin-left:8rem;" >
+                        <div class="skill-item" id="skillfive"style="width: 50%;">Skill 5</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:6rem;" >Python</h2>
+                    <ul class="skill-bar" style="margin-left:6rem;" >
+                        <div class="skill-item" id="skillfive"style="width: 50%;">Skill 5</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:4rem;" >HTML</h2>
+                    <ul class="skill-bar" style="margin-left:4rem;" >
+                        <div class="skill-item" id="skillfive"style="width: 50%;">Skill 5</div>
+                    </ul>
+                    <h2 class="skill-name"style="margin-left:2rem;" >CSS</h2>
+                    <ul class="skill-bar" style="margin-left:2rem;" >
+                        <div class="skill-item" id="skillfive"style="width: 50%;">Skill 5</div>
+                    </ul>
+                </div>
+                <p style="text-align: center; font-family:'Truculenta', sans-serif; font-size:25px; margin-top:2rem;" >You can see and download my CV from here</p><br>
+                <div id="cvpdf">
+                    <iframe src="https://drive.google.com/file/d/1sXG9ttGiy4WLd7M_EH7ZLwAQYXGHRSW4/preview" width="300" height="400"></iframe>
+                </div>
+            </div>
+            <div id="hobbiespage">
+                <h1>Hobbies</h1><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum mi eu massa malesuada fringilla. 
+                    Pellentesque eget ultrices felis. Ut erat sapien, egestas egestas mattis eu, porttitor sed neque. Sed in 
+                    pellentesque lectus. Curabitur feugiat neque lectus, in lacinia nisl semper eget. Sed placerat, diam sit amet 
+                    tempor mollis, purus mauris ullamcorper odio, id efficitur tellus arcu non libero. Class aptent taciti sociosqu 
+                    ad litora torquent per conubia nostra, per inceptos himenaeos.<br><br>
+                    Duis eu augue nec mauris tincidunt volutpat. Nullam lacus massa, rhoncus vitae turpis vitae, finibus 
+                    volutpat massa. Morbi porta iaculis mauris sed consequat. Quisque sodales condimentum massa. 
+                    Vestibulum libero purus, pulvinar ac ipsum facilisis, mollis feugiat mauris. 
+                    Vivamus ut tincidunt leo. Vestibulum vulputate massa ut est pharetra, quis rutrum velit facilisis. <br><br>
+                    Phasellus quis arcu quis massa pellentesque tincidunt. Nulla feugiat nibh a magna suscipit sagittis in nec orci. 
+                    Etiam tincidunt nunc quis porttitor posuere. Ut quis felis nulla. Maecenas ut consectetur erat. Pellentesque pharetra 
+                    mattis imperdiet. Fusce non arcu vitae ipsum varius viverra. Vestibulum porttitor feugiat placerat. 
+                </p>
+            </div>
+            <div id="contactpage">
+                <h1>Contact</h1><br>
+                <p style="text-align: center;color:blanchedalmond;font-size:27px;font-family: 'Truculenta', sans-serif;" >You can contact me with my social media, e-mail and call me anytime (not anytime)</p><br><br>
+                <ul class="links" >
+                    <ul><img src="https://img.icons8.com/fluent-systems-filled/50/000000/instagram-new.png"/></ul>
+                    <a style="text-decoration: none;color:blanchedalmond;font-size:25px;font-family: 'Truculenta', sans-serif;" href="https://www.instagram.com/barisemren/" target="_blank" >My Instagram</a>
+                </ul><br><br>
+                <ul class="links">
+                    <ul><img src="https://img.icons8.com/material/50/000000/linkedin--v1.png"/></ul>
+                    <a style="text-decoration: none;color:blanchedalmond;font-size:25px;font-family: 'Truculenta', sans-serif;" href="https://www.linkedin.com/in/barisemren/" target="_blank" >My LinkedIn</a>
+                </ul><br><br>
+                <ul class="links">
+                    <ul><img src="https://img.icons8.com/fluent-systems-filled/50/000000/email-sign.png"/></ul>
+                    <p style="color:blanchedalmond;font-size:25px;font-family: 'Truculenta', sans-serif;" >e-mail: baris.emren@yahoo.com</p>
+                </ul><br><br>
+                <ul class="links">
+                    <ul><img src="https://img.icons8.com/ios-filled/50/000000/apple-phone.png"></ul>
+                    <p style="color: blanchedalmond;font-size:25px;font-family: 'Truculenta', sans-serif;" > phone: +90 551 441 8933</p>
+                </ul><br><br>
+                <p style="font-size: 1px;" >.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
