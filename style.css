@@ -1,0 +1,377 @@
+/*  font-family: 'Truculenta', sans-serif; (Normal metinlerde kullanılacak) */ 
+
+/*SAYFANIN KÖŞELERİNDE BOŞLUK KALMAMASI İÇİN */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html{
+    background-color:#413e6e;
+}
+
+/* NAV BARIN HİZALANMASI*/
+nav{
+    margin-left: 3rem;
+    margin-top:6rem;
+}
+/*SAYFA YAPISININ OLUŞTURULMASI*/
+.grid-container{
+    display:grid;
+    grid-template-columns: 21% 79%;
+    grid-gap: 0px;
+}
+/* NAV ITEMLERİNİN ARASINDAKİ BOŞLUĞU BELİRLEME*/
+.nav-item{
+    margin-top: 2rem;
+}
+/* NAV ITEMLERİ ANİMASYONU BAŞLANGIÇ*/
+.nav-link{
+    font-family: 'Truculenta', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:rgb(241, 93, 93);
+}
+/* NAV ITEMLERİ ANİMASYONU BİTİŞ*/
+
+/* FOOTER ÖZELLEŞTİRMESİ */
+footer{
+    margin-top:3rem;
+    margin-left: -3rem;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    font-family: 'Truculenta', sans-serif;;
+}
+
+/* ANA BÖLÜMLERİN ÖZELLEŞTİRİLMESİ BAŞLANGIÇ */
+#sidebar{
+    grid-column: 1;
+    width: 15.66rem;
+    height:17.7cm;
+    margin-left:2rem;
+    position:fixed;
+    left: 0px;
+    border-right:solid 0.1em;
+    border-color: rgb(167, 167, 167);
+}
+#content{
+    grid-column: 2;
+}
+/* ANA BÖLÜMLERİN ÖZELLEŞTİRİLMESİ BİTİŞ */
+
+/* PROFİL RESMİ ÖZELLEŞTİRMESİ BAŞLANGIÇ */
+#me{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    opacity:0.9 ;
+    border: solid 2px;
+    border-color:rgb(167, 167, 167);
+    margin-top: 10rem;
+    display:flex;
+    justify-content:center;
+    transition:all 0.4s ease-in-out;
+}
+#me:hover{
+    transform: scale(1.2);
+}
+/* PROFİL RESMİ ÖZELLEŞTİRMESİ BİTİŞ */
+
+
+/* NAV ITEMLERİNİN ÖZELLEŞTİRİLMESİ  BAŞLANGIÇ*/
+#home::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#home:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+#hobbies::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#hobbies:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+#education::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#education:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+#cv::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#cv:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+#about::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#about:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+#contact::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:thistle;
+    display:block;
+    transition:width .5s;
+}
+#contact:hover::after{
+    width:23%;
+    transition:width .5s;
+}
+/* NAV ITEMLERİNİN ÖZELLEŞTİRİLMESİ BİTİŞ*/
+
+/*HAKKIMDA SAYFASI ÖZELLEŞİRME BAŞLANGIÇ*/
+#aboutpage{
+    background: linear-gradient(52deg, #2a5294, #94a8c8, #958ea3, #6d66a1);
+    background-size: 800% 800%;
+    animation: sections-background 7s ease infinite;
+    margin-top: 72px;
+    border-top: solid 1px;
+    border-color: rgb(167, 167, 167);
+    padding-top:1cm;
+}
+#aboutpage p{
+    font-family:'Truculenta', sans-serif;
+    font-size: 26.5px;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    
+}
+#aboutpage h1{
+    font-family: 'Rubik', sans-serif;
+    color:papayawhip;
+    text-align: center;
+    font-size:40px;
+    transition:all 1s ease-in-out ;
+}
+#aboutpage h1:hover{
+    color: rgb(255, 136, 0); 
+    transform:rotateY(360deg);
+}
+
+/*HAKKIMDA SAYFASI ÖZELLEŞİRME BİTİŞ*/
+
+/*EĞİTİM SAYFASI ÖZELLEŞTİRME BAŞLANGIÇ*/
+#educationpage{
+    background: linear-gradient(50deg, #38c5a0, #38c53d, #38abc5, #3860c5);
+    background-size: 800% 800%;
+    animation: sections-background 7s ease infinite;
+    border-top: solid 1px;
+    border-color: rgb(167, 167, 167);
+    padding-top:1cm;
+}
+#educationpage h1{
+    font-family: 'Rubik', sans-serif;
+    color:papayawhip;
+    text-align: center;
+    font-size:40px;
+    transition:all 1s ease-in-out ;
+}
+#educationpage h1:hover{
+    color: rgb(4, 70, 190); 
+    transform:rotateY(360deg);
+}
+#educationpage p{
+    font-family:'Truculenta', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;    
+}
+/*EĞİTİM SAYFASI ÖZELLEŞTİRME BİTİŞ*/
+
+/*CV SAYFASI ÖZELLEŞTİRME BAŞLANGIÇ*/
+#cvpage{
+    background: linear-gradient(47deg, #f2d356, #766315, #ea7c21, #ff3a00);
+    background-size: 800% 800%;
+    animation: sections-background 7s ease infinite;
+    border-top: solid 1px;
+    border-color: rgb(167, 167, 167);
+    padding-top:1cm;
+}
+#cvpage h1{
+    font-family: 'Rubik', sans-serif;
+    color:papayawhip;
+    text-align: center;
+    font-size:40px;
+    transition:all 1s ease-in-out ;
+}
+#cvpage h1:hover{
+    color: rgb(0, 0, 0); 
+    transform:rotateY(360deg);
+}
+#skills{
+    grid-column: 1;
+}
+.skill-bar{
+    background-color: rgb(156, 156, 156); 
+    width:60%; 
+    height:25px;
+    border-radius:20px;
+}
+.skill-item{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:28px;
+    background-color:rgb(245, 75, 75); 
+    height:25px;
+    border-radius:20px;
+    text-align:center;
+}
+.skill-name{
+    font-family:'Truculenta', sans-serif;
+    margin-left:1rem;
+    font-size:19px;
+}
+#cvpdf{
+    margin-left:23rem;
+}
+/*CV SAYFASI ÖZELLEŞTİRME BİTİŞ*/
+
+/*HOBİ SAYFASI ÖZELLEŞTİRME BAŞLANGIÇ*/
+#hobbiespage{
+    background: linear-gradient(43deg, #352ca8, #446624, #0a2b28, #0d6b63);
+    background-size: 800% 800%;
+    animation: sections-background 7s ease infinite;
+    border-top: solid 1px;
+    border-color: rgb(167, 167, 167);
+    padding-top:1cm;
+}
+#hobbiespage h1{
+    font-family: 'Rubik', sans-serif;
+    color:papayawhip;
+    text-align: center;
+    font-size:40px;
+    transition:all 1s ease-in-out ;
+}
+#hobbiespage h1:hover{
+    color: rgb(168, 165, 0); 
+    transform:rotateY(360deg);
+}
+#hobbiespage p{
+    font-family:'Truculenta', sans-serif;
+    font-size: 24px;
+    color:lightsalmon;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;    
+}
+/*HOBİ SAYFASI ÖZELLEŞTİRME BİTİŞ*/
+
+/*İLETİŞİM SAYFASI ÖZELLEŞİRME BAŞLANGIÇ*/
+#contactpage{
+    background: linear-gradient(63deg, #232323, #767676, #999999, #1e1e1e);
+    background-size: 800% 800%;
+    animation: sections-background 7s ease infinite;
+    border-top: solid 1px;
+    border-color: rgb(167, 167, 167);
+    padding-top:1cm;
+}
+#contactpage h1{
+    font-family: 'Rubik', sans-serif;
+    color:papayawhip;
+    text-align: center;
+    font-size:40px;
+    transition:all 1s ease-in-out ;
+}
+#contactpage h1:hover{
+    color: rgb(0, 0, 0); 
+    transform:rotateY(360deg);
+}
+.links{
+    text-align: center;
+    text-decoration:none;
+}
+/*İLETİŞİM SAYFASI ÖZELLEŞTİRME BİTİŞ
+
+/* İLK SAYFADAKİ SCROLL BUTONU ÖZELLEŞTİRME BAŞLANGIÇ*/
+#firstpagescroll img {
+    transition:all 0.3s ease-in-out;
+}
+#firstpagescroll img:hover{
+    cursor:pointer;
+    transform:scale(1.15);
+}
+/*SCROLL BUTONU ÖZELLEŞTİRME BİTİŞ*/
+
+/*SERTİFİKALARI ÖZELLEŞTİRME BAŞLANGIÇ*/
+#certificates{
+    display: flexbox;
+    margin-left: 4rem;
+}
+#certificate-item{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flexbox;
+    border-radius: 5%;
+    border: solid 1px rgb(78, 63, 63);
+}
+/*SERTİFİKALARI ÖZELLEŞTİRME BİTİŞ*/
+
+
+@keyframes sections-background {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+@media screen and (max-width:1334px){
+    #sidebar{
+        display: none;
+    }
+    #scroll-text{
+        display: none;
+    }
+    #firstpagescroll{
+        display: none;
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: 0% 100%;
+        grid-gap: 0px;
+    }
+    #certificate-item{
+        margin-left: 60px;
+    }
+    #cvpdf{
+        margin-left:85px;
+    }
+}
