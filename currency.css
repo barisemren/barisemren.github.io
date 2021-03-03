@@ -36,3 +36,27 @@ p{
     margin-left: 40px;
     height: 35px;
 }
+
+@media screen and (max-width:450px){
+
+    #basecurrency{
+        padding-left: 30px;
+        cursor: pointer;
+        outline: none;
+        border-radius:10px;
+        background-color:indianred;
+        width: 110px;
+        margin-right: 40px;
+        height: 35px;
+    }
+    #targetcurrency{
+        padding-left:30px;
+        cursor: pointer;
+        outline: none;
+        border-radius:10px;
+        background-color:indianred;
+        width: 110px;
+        margin-left: 40px;
+        height: 35px;
+    }
+}
